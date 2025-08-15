@@ -1,0 +1,65 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deus 2.0 — Fila de Preces</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>💫 Deus 2.0</h1>
+        <p>Atendendo pedidos da humanidade com ética e prioridade</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Fazer uma Prece</h2>
+            <form id="prayerForm">
+                <label>Título:</label>
+                <input type="text" id="title" required>
+
+                <label>Descrição:</label>
+                <textarea id="description" required></textarea>
+
+                <label>Categoria:</label>
+                <select id="category" required>
+                    <option value="saude">Saúde</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="amor">Amor</option>
+                </select>
+
+                <label>Condição verificada?</label>
+                <select id="condition" required>
+                    <option value="true">Sim</option>
+                    <option value="false">Não</option>
+                </select>
+
+                <button type="submit">Enviar Prece</button>
+            </form>
+        </section>
+
+        <section class="queue-section">
+            <h2>Fila de Prioridade</h2>
+            <ul id="prayerQueue"></ul>
+        </section>
+
+        <section class="ethics-section">
+            <h2>Regras Éticas</h2>
+            <ul>
+                <li>Não manipular livre-arbítrio.</li>
+                <li>Não causar efeitos colaterais graves.</li>
+                <li>Atender primeiro pedidos vitais (saúde &gt; dinheiro &gt; amor).</li>
+                <li>Somente pedidos com condição verificada entram na prioridade alta.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>✨ Sistema experimental para fins educacionais ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
